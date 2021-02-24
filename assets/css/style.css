@@ -939,7 +939,7 @@ footer div a {
 	align-items: center;
 }
 footer div a img {
-	height: fit-content;
+	height: initial;
 	width: 30%;
 }
 footer div a h2 {
@@ -1405,6 +1405,15 @@ footer .contact-form button.filled-button:hover {
 		height: unset;
 	}
 
+	.navbar .navbar-brand h2 {
+		font-size: 16px !important;
+
+	}
+
+	footer div a h2 {
+		font-size: 16px !important;
+	}
+
 
 }
 
@@ -1432,5 +1441,5 @@ div.owl-dots {
 	display: flex;
 	justify-content: center;
 	padding-top: 20px;
-
+	height: 30px;
 }
