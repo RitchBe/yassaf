@@ -364,10 +364,10 @@ header .navbar {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
+  /* -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 .Grid1k {
@@ -1421,17 +1421,17 @@ footer .contact-form button.filled-button:hover {
 button.owl-dot {
 	background: rgba(7, 49, 71, 0.4) !important;
 	border-radius: 50%;
-	height: 15px;
-	width: 15px;
+
 	margin-left: 5px !important;
+	padding: 5px !important;
 	/* margin-right: 5px !important; */
 }
 
-button.owl-dot span {
+/* button.owl-dot span {
 	height: 15px;
 	width: 15px;
 
-}
+} */
 
 button.owl-dot.active {
 	background: rgba(7, 49, 71, 1) !important;
