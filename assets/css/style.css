@@ -1447,3 +1447,12 @@ div.owl-dots {
 	list-style: disc;
 	
 }
+
+@media screen and (max-width: 768px) {
+	.flotte-container {
+		width: 80%;
+		margin: auto;
+					
+	}
+
+}
