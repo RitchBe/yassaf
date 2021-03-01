@@ -593,7 +593,6 @@ ul.slick-dots {
 /* Fun Facts */
 
 .fun-facts {
-	margin-top: 140px;
 	background-image: url(../images/fun-facts-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1442,4 +1441,9 @@ div.owl-dots {
 	justify-content: center;
 	padding-top: 20px;
 	height: 30px;
+}
+
+.flotte-container ul {
+	list-style: disc;
+	
 }
