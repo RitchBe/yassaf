@@ -69,7 +69,7 @@ a.border-button:hover {
 
 .section-heading {
 	text-align: center;
-	margin-bottom: 80px;
+	margin-bottom: 35px;
 }
 
 .section-heading h2 {
@@ -723,8 +723,15 @@ a.filled-button.yellow:hover {
 
 .testimonials {
 	margin-top: 140px;
+	/* background-color: #f7f7f7; */
+	/* padding: 50px 0px; */
+	margin-bottom: 140px;
+}
+.testimonials .container {
 	background-color: #f7f7f7;
-	padding: 140px 0px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+
 }
 .testimonial-item .inner-content {
 	text-align: center;
@@ -914,6 +921,7 @@ a.filled-button.yellow:hover {
 .partners h4 {
 	margin-bottom: 10px;
 }
+
 
 
 
@@ -1456,5 +1464,30 @@ div.owl-dots {
 		margin: auto;
 					
 	}
+
+}
+
+.Modern-Slider .text-content {
+	top: 30%
+
+}
+
+.service-block {
+
+	background: #f7f7f7;
+}
+
+.services-section-heading {
+	margin-top: 35px;
+	margin-bottom: 35px;
+
+}
+
+@media screen and (max-width: 768px) {
+	.services, .testimonials {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
 
 }
