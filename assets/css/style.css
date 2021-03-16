@@ -251,21 +251,21 @@ header .navbar {
 .background-header {
 	top: 0;
 	position: fixed;
-	background-color: #fff!important;
+	background-color: #073147!important;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
 }
 .background-header .navbar-brand h2 {
-	color: #073147!important;
+	color: white!important;
 }
 .background-header .navbar-nav a.nav-link {
-	color: #1e1e1e!important;
+	color: white!important;
 }
 .background-header .navbar-nav .nav-link:hover,
 .background-header .navbar-nav .active>.nav-link,
 .background-header .navbar-nav .nav-link.current,
 .background-header .navbar-nav .nav-link.show,
 .background-header .navbar-nav .show>.nav-link {
-	color: #073147!important;
+	color: white!important;
 }
 .navbar .navbar-brand {
 	float: 	left;
@@ -324,8 +324,8 @@ header .navbar {
 	background-image: none;
 }
 .navbar .navbar-toggler {
-	border-color: #fff;
-	background-color: #fff;	
+	/* border-color: #fff;
+	background-color: #fff;	 */
 	height: 36px;
 	outline: none;
 	border-radius: 0px;
@@ -335,7 +335,7 @@ header .navbar {
 }
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
-	color: #073147;
+	color: white;
 	font-size: 18px;
 	line-height: 26px;
 	font-family: 'FontAwesome';
@@ -921,11 +921,12 @@ a.filled-button.yellow:hover {
 
 footer {
 	background-color: #073147;
-	padding: 150px 0px;
+	/* padding: 150px 0px; */
 	color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 80px;
 }
 
 footer .container {
@@ -1244,6 +1245,7 @@ footer .contact-form button.filled-button:hover {
 
 .contact-information {
 	margin-top: 0px;
+	margin-bottom: 50px;
 }
 
 .contact-information .contact-item {
@@ -1326,9 +1328,9 @@ footer .contact-form button.filled-button:hover {
 	.more-info .right-content  {
 		padding: 30px;
 	}
-	footer {
+	/* footer {
 		padding: 80px 0px 20px 0px;
-	}
+	} */
 	footer .footer-item {
 		border-bottom: 1px solid #343434;
 		margin-bottom: 30px;
@@ -1372,7 +1374,7 @@ footer .contact-form button.filled-button:hover {
 	    left: 0;
 	    width: 100%;
 	    text-align: center;
-	    background-color: #fff;
+	    background-color: #073147;
 	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 	}
 	.navbar .navbar-nav .nav-item {
@@ -1383,14 +1385,14 @@ footer .contact-form button.filled-button:hover {
 	}
 	.navbar .navbar-nav a.nav-link {
 		padding: 15px 0px;
-		color: #1e1e1e!important;
+		color: white!important;
 	}
 	.navbar .navbar-nav .nav-link:hover,
 	.navbar .navbar-nav .active>.nav-link,
 	.navbar .navbar-nav .nav-link.current,
 	.navbar .navbar-nav .nav-link.show,
 	.navbar .navbar-nav .show>.nav-link {
-		color: #073147!important;
+		color:white!important;
 		border-bottom: none!important;
 	}
 }
