@@ -1513,3 +1513,20 @@ footer div a img {
 }
 
 }
+.img-sav {
+	width: 100%;
+	padding-top: 20px;
+
+}
+
+@media screen and (min-width: 768px) {
+	.img-sav {
+		width: 40%;
+	}
+
+}
+
+#contactus {
+	position: absolute;
+	transform: translateY(-50px);
+}
