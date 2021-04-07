@@ -32,8 +32,8 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 }
 
-a.filled-button {
-	background-color: #073147;
+a.filled-button, .filled-button {
+	background-color: #073147 ;
 	color: #fff;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -42,9 +42,10 @@ a.filled-button {
 	border-radius: 30px;
 	display: inline-block;
 	transition: all 0.3s;
+	cursor: pointer;
 }
 
-a.filled-button:hover {
+a.filled-button:hover, .filled-button:hover {
 	background-color: #ffcb05;
 	color: #073147;
 }
@@ -401,7 +402,16 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/truck1.jpg);
+	background-image: url(../images/service.jpeg);
+	background-position: left;
+}
+
+@media screen and (min-width: 768px) {
+
+.Modern-Slider .item-1 .img-fill {
+	background-position: center;
+}
+
 }
 
 .Modern-Slider .item-2 .img-fill {
@@ -1530,3 +1540,117 @@ footer div a img {
 	position: absolute;
 	transform: translateY(-50px);
 }
+
+.slick-slide a {
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pitch-text {
+	display: none !important;
+}
+
+.form-contact .row {
+	justify-content: center
+
+}
+
+.inbound-form-wrapper {
+	width: 90%;
+
+}
+
+@media screen and (min-width: 768px) {
+	.inbound-form-wrapper {
+		width: 80%;
+	}
+}
+
+
+/* c ontaact form */
+
+form {
+	width: 90%;
+	/* margin: 10% auto; */
+	min-width: 9rem;
+  }
+  @media screen and (min-width: 768px) {
+	  form {
+		  width: 50%;
+	  }
+  }
+  input,
+  textarea {
+	float: left;
+	width: 100%;
+	max-width: 100%;
+	border: none;
+	margin: 0.5rem 0;
+	padding: 0.5rem 1rem;
+	border-radius: 0.3rem;
+	background: #e0e0e0;
+	color: #7a7a7a;
+  }
+  input[type=submit],
+  textarea[type=submit] {
+	color: #fff;
+	width: auto;
+	float: right;
+  }
+  input::placeholder,
+  textarea::placeholder {
+	color: #7a7a7a;
+  }
+  input.error,
+  textarea.error {
+	background: #ad4747;
+	color: #fff;
+  }
+  input.error::placeholder,
+  textarea.error::placeholder {
+	color: black;
+  }
+  
+  textarea {
+	height: 10rem;
+  }
+  
+  .captcha {
+	float: left;
+  }
+  .captcha input {
+	float: right;
+  }
+  .captcha input[name=question] {
+	width: 4rem;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	text-align: right;
+	padding-right: 0;
+  }
+  .captcha [name=captcha] {
+	width: 5rem;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	padding-left: 0.5rem;
+  }
+  .captcha [name=captcha]::placeholder {
+	text-align: center;
+  }
+  
+
+  .hidden {
+	display: none;
+
+  }
+
+  .phone  {
+	font-weight: 600;
+    color: #073147;
+    font-size: 15px;
+  }
+
+  .phone-white{
+	  color: white;
+  }

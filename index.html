@@ -42,7 +42,7 @@
           <div class="col-md-8 col-xs-12">
             <ul class="left-info">
               <li><a href="#"><i class="fa fa-clock-o"></i>Lun-Ven 09:00-17:00</a></li>
-              <li><a href="#"><i class="fa fa-phone"></i>+32456456456</a></li>
+              <li><p class="phone phone-white" href="#"><i class="fa fa-phone"></i>+32456456456</p></li>
             </ul>
           </div>
           <div class="col-md-4">
@@ -99,7 +99,7 @@
                   <!-- <h6>Phrase sur yassfa 1</h6> -->
                   <h4 style="text-align: center;">Time is money,<br>We save you both</h4>
                   <!-- <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est du faux texte.</p> -->
-                  <!-- <a href="#contactus" class="filled-button">Nous contacter</a> -->
+                  <a href="#contactus" class="filled-button">Nous contacter</a>
                 </div>
             </div>
           </div>
@@ -114,7 +114,7 @@
         <div class="row">
           <div class="col-md-8">
             <h4>Nous contacter ?</h4>
-            <span>Telephonez nous ou envoyez nous un e-mail, nous répondons dans les 24 heures.</span>
+            <span>Telephonez nous ou envoyez nous un email, nous répondons dans les 24 heures.</span>
           </div>
           <div class="col-md-4">
             <a href="#contactus" class="border-button">Nous contacter</a>
@@ -166,7 +166,7 @@
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="assets/images/service.jpeg" alt="">
+              <img src="assets/images/truck1.jpg" alt="">
               <div class="down-content">
                 <!-- <h4>Service 1</h4> -->
                 <p style="text-align: center;">Notre équipe de professionnels est prête à relever vos défis. Déménagement, lift, livraisons express, nationales ou internationales nous vous offrons un large choix de services logistiques.                </p>
@@ -331,6 +331,30 @@
           </div>
         </div>
       </div>
+
+      <div class="contact-information form-contact">
+        <div class="container">
+          <div class="row">
+              <form action="https://app.99inbound.com/api/e/OLC64XUR" method="POST" target="_blank" class="contact-form">         
+                    <input type="text" placeholder="Votre Nom Complet" name="name" required>                 
+                    <input type="email" placeholder="Votre Email" name="email" required>                 
+                    <textarea placeholder="Votre Message" name="message" required></textarea>                  
+                    <div class="captcha">
+                    </div>
+                    <div style="position: absolute; left: -5000px;">
+                        <input type="checkbox" name="vegan_azure_satin_spider_wolf" value="1" tabindex="-1" autocomplete="no">
+                      </div>
+                    <input type="submit" value="Envoyer" class="filled-button">                                 
+              </form>
+
+              <div class="hidden success">
+                <p>Merci pour votre message!</p>
+              </div>
+        </div>
+      </div>
+      </div>
+
+
   
       <div class="contact-information">
         <div class="container">
@@ -340,7 +364,7 @@
                 <i class="fa fa-phone"></i>
                 <h4>Téléphone</h4>
                 <!-- <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue.</p> -->
-                <a href="#">0492100596</a>
+                <p class="phone">0492100596</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -455,6 +479,14 @@
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
     <script>
+
+$(document).ready(function() {
+    if (window.location.href.indexOf("success") > -1) {
+      $('.contact-form').addClass('hidden');
+      $('.success').removeClass('hidden');
+    }
+  });
+      
       $(function() {
         // Single Page Nav
         $('#navbarResponsive').singlePageNav({
@@ -478,6 +510,8 @@
           t.style.color='#fff';
           }
       }
+
+
     </script>
 
   </body>
