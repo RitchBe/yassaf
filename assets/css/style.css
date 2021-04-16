@@ -398,7 +398,14 @@ header .navbar {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height:95vh;
+	height:70vh;
+}
+
+@media screen and (min-width: 768px) {
+	.Modern-Slider .item .img-fill {
+		height: 95vh;
+	}
+
 }
 
 .Modern-Slider .item-1 .img-fill {
@@ -1419,7 +1426,7 @@ footer .contact-form button.filled-button:hover {
 
 @media screen and (max-width: 800px) {
 	.Modern-Slider .text-content {
-		width: 60%;
+		width: 92%;
 	}
 
 	.contact-information .contact-item {
@@ -1477,10 +1484,22 @@ div.owl-dots {
 					
 	}
 
+} 
+
+.Modern-Slider .item a {
+
+
 }
 
 .Modern-Slider .text-content {
-	top: 30%
+	top: 70%
+}
+
+@media screen and (min-width: 768px) {
+	.Modern-Slider .text-content {
+		top: 30%;
+	}
+
 
 }
 
@@ -1582,7 +1601,6 @@ form {
   }
   input,
   textarea {
-	float: left;
 	width: 100%;
 	max-width: 100%;
 	border: none;
@@ -1596,7 +1614,6 @@ form {
   textarea[type=submit] {
 	color: #fff;
 	width: auto;
-	float: right;
   }
   input::placeholder,
   textarea::placeholder {
@@ -1653,4 +1670,15 @@ form {
 
   .phone-white{
 	  color: white;
+  }
+
+  .envoyer-container {
+	display: flex;
+	justify-content: center;
+
+  }
+
+  .envoyer-container input {
+	float: unset !important;
+
   }

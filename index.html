@@ -5,11 +5,12 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Notre équipe de professionnels est prête à relever vos défis. Déménagement, lift, livraisons express, nationales ou internationales nous vous offrons un large choix de services logistiques.">
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <meta property="og:image" content="assets/images/service.jpeg">
 
-    <title>Yassaf Transport</title>
+    <title>Yassfa Transport</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,8 +21,7 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png"/>
 
-
-  </head>
+    <script async src="https://static.howdyform.com/howdyClient.js?token=eWJzLmJydXNzZWxzQGdtYWlsLmNvbQ==" data-howdy-recipient="ybs.brussels@gmail.com"></script>  </head>
 
   <body>
 
@@ -109,7 +109,7 @@
     </div>
     <!-- Banner Ends Here -->
  
-    <div class="request-form">
+    <!-- <div class="request-form">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -121,7 +121,7 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>  -->
 
     <div class="more-info" id="about">
       <div class="container">
@@ -194,7 +194,7 @@
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Notre Flotte</h2>
-              <span>Après de nombreuses années sur les routes, notre constat est sans appel. Notre partenaire est Mercedes.</span>
+             
             </div>
           </div>
           <div class="flotte-container">
@@ -331,11 +331,17 @@
           </div>
         </div>
       </div>
-
+      <script type="text/javascript">
+        window.howdyEvents = {};
+        window.howdyEvents.afterSend = function() {
+          $('.contact-form').addClass('hidden');
+          $('.success').removeClass('hidden');
+        };
+      </script>
       <div class="contact-information form-contact">
         <div class="container">
           <div class="row">
-              <form action="https://app.99inbound.com/api/e/OLC64XUR" method="POST" target="_blank" class="contact-form">         
+              <form  method="POST" target="_blank" class="contact-form">         
                     <input type="text" placeholder="Votre Nom Complet" name="name" required>                 
                     <input type="email" placeholder="Votre Email" name="email" required>                 
                     <textarea placeholder="Votre Message" name="message" required></textarea>                  
@@ -344,7 +350,10 @@
                     <div style="position: absolute; left: -5000px;">
                         <input type="checkbox" name="vegan_azure_satin_spider_wolf" value="1" tabindex="-1" autocomplete="no">
                       </div>
-                    <input type="submit" value="Envoyer" class="filled-button">                                 
+                      <div class="envoyer-container">
+                        <input type="submit" value="Envoyer" class="filled-button">                                 
+
+                      </div>
               </form>
 
               <div class="hidden success">
@@ -510,6 +519,7 @@ $(document).ready(function() {
           t.style.color='#fff';
           }
       }
+
 
 
     </script>
