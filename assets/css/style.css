@@ -398,7 +398,7 @@ header .navbar {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height:70vh;
+	height:50vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -1681,4 +1681,9 @@ form {
   .envoyer-container input {
 	float: unset !important;
 
+  }
+
+  .a.filled-button, .filled-button {
+	text-align: center;
+	padding: 12px 21px;
   }
