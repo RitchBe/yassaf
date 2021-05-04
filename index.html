@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png"/>
 
-    <script async src="https://static.howdyform.com/howdyClient.js?token=eWJzLmJydXNzZWxzQGdtYWlsLmNvbQ==" data-howdy-recipient="ybs.brussels@gmail.com"></script>  </head>
+    <!-- <script async src="https://static.howdyform.com/howdyClient.js?token=eWJzLmJydXNzZWxzQGdtYWlsLmNvbQ==" data-howdy-recipient="ybs.brussels@gmail.com"></script>  </head> -->
 
   <body>
 
@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <header class="">
+    <header class="background-header">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#top">
@@ -164,7 +164,7 @@
               <!-- <span>Aliquam id urna imperdiet libero mollis hendrerit</span> -->
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-9">
             <div class="service-item">
               <img src="assets/images/truck1.jpg" alt="">
               <div class="down-content">
@@ -331,18 +331,16 @@
           </div>
         </div>
       </div>
-      <script type="text/javascript">
-        window.howdyEvents = {};
-        window.howdyEvents.afterSend = function() {
-          $('.contact-form').addClass('hidden');
-          $('.success').removeClass('hidden');
-        };
-      </script>
-      <div class="contact-information form-contact">
+
+      <div id="contactForm" class="contact-information form-contact">
         <div class="container">
           <div class="row">
-              <form  method="POST" target="_blank" class="contact-form">         
-                    <input type="text" placeholder="Votre Nom Complet" name="name" required>                 
+ 
+
+              <form action="https://api.staticforms.xyz/submit"  method="post">
+                <!-- Replace with accesKey sent to your email -->
+                <input type="hidden" name="accessKey" value="51379040-9bdb-4572-ae25-50472d3b9ead"> <!-- Required -->
+                <input type="text" placeholder="Votre Nom Complet" name="name" required>                 
                     <input type="email" placeholder="Votre Email" name="email" required>                 
                     <textarea placeholder="Votre Message" name="message" required></textarea>                  
                     <div class="captcha">
@@ -354,7 +352,11 @@
                         <input type="submit" value="Envoyer" class="filled-button">                                 
 
                       </div>
-              </form>
+                      <input type="hidden" name="redirectTo" value="https://yassfa-transport.com/#contactForm?success">
+
+            </form>
+            
+
 
               <div class="hidden success">
                 <p>Merci pour votre message!</p>
@@ -362,6 +364,8 @@
         </div>
       </div>
       </div>
+
+      
 
 
   
@@ -381,7 +385,7 @@
                 <i class="fa fa-envelope"></i>
                 <h4>Email</h4>
                 <!-- <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue.</p> -->
-                <a href="mailto:ybs.brussels@gmail.com" target="_blank">ybs.brussels@gmail.com</a>
+                <a href="mailto:info@yassfa-transport.com" target="_blank">info@yassfa-transport.com</a>
               </div>
             </div>
             <div class="col-md-4">

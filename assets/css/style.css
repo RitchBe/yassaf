@@ -398,25 +398,25 @@ header .navbar {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height:50vh;
+	height: 450px;
 }
 
 @media screen and (min-width: 768px) {
 	.Modern-Slider .item .img-fill {
-		height: 95vh;
+		height: 600px;
 	}
 
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/service.jpeg);
-	background-position: left;
+	background-image: url(../images/yellowtruk.jpeg);
+	background-position: center top;
 }
 
 @media screen and (min-width: 768px) {
 
 .Modern-Slider .item-1 .img-fill {
-	background-position: center;
+	background-position: center top;
 }
 
 }
@@ -1497,7 +1497,8 @@ div.owl-dots {
 
 @media screen and (min-width: 768px) {
 	.Modern-Slider .text-content {
-		top: 30%;
+		top: 63%;
+		left: 71%
 	}
 
 
@@ -1687,3 +1688,23 @@ form {
 	text-align: center;
 	padding: 12px 21px;
   }
+
+  .main-banner.header-text {
+	margin-top: 80px;
+  }
+
+  @media screen and (min-width: 769px) {
+	.main-banner.header-text {
+		margin-top: 34px;
+	  }
+	  .more-info .right-content h2 {
+		font-size: 45px;
+
+	  }
+
+	  p {
+		  font-size: 16px;
+	  }
+
+  }
+
