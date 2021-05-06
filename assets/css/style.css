@@ -245,6 +245,7 @@ header {
 }
 header .navbar {
 	padding: 20px 0px;
+	width: 100%;
 }
 .background-header .navbar {
 	padding: 0px 0px;
@@ -254,6 +255,10 @@ header .navbar {
 	position: fixed;
 	background-color: #073147!important;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .background-header .navbar-brand h2 {
 	color: white!important;
@@ -270,7 +275,7 @@ header .navbar {
 }
 .navbar .navbar-brand {
 	float: 	left;
-	margin-top: 12px;
+	/* margin-top: 12px; */
 	outline: none;
 	display: flex;
 	align-items: center;
@@ -945,7 +950,7 @@ a.filled-button.yellow:hover {
 /* Footer Style */
 
 footer {
-	background-color: #073147;
+	background-color: #073147 !important;
 	/* padding: 150px 0px; */
 	color: #fff;
 	display: flex;
