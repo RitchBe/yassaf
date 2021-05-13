@@ -337,7 +337,7 @@ header .navbar {
 	border-radius: 0px;
 	position: absolute;
 	right: 30px;
-	top: 20px;
+	top: 12px;
 }
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
@@ -1389,7 +1389,7 @@ footer .contact-form button.filled-button:hover {
 
 @media (max-width: 992px) {
 	.navbar .navbar-brand {
-		position: absolute;
+		/* position: absolute; */
 		left: 30px;
 		top: 0px;
 	}
@@ -1402,7 +1402,7 @@ footer .contact-form button.filled-button:hover {
 	#navbarResponsive {
 	    z-index: 99999;
 	    position: absolute;
-	    top: 80px;
+	    top: 71px;
 	    left: 0;
 	    width: 100%;
 	    text-align: center;
@@ -1478,7 +1478,7 @@ div.owl-dots {
 }
 
 .flotte-container ul {
-	list-style: disc;
+	list-style: none;
 	
 }
 
@@ -1713,3 +1713,21 @@ form {
 
   }
 
+
+  div.sprinter img {
+	width: 100%
+  }
+
+  @media screen and (min-width: 768px) {
+	.flotte-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	div.sprinter {
+		width: 55%;
+		margin-left: 10px;
+
+	}
+
+  }
